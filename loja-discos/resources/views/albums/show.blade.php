@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $album->title }}</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>{{ $album->title }}</h1>
-    <p>Artista: {{ $album->artist }}</p>
-    <p>Ano de Lançamento: {{ $album->release_year }}</p>
-    <p>Gênero: {{ $album->genre }}</p>
-    <p>Preço: R$ {{ number_format($album->price, 2, ',', '.') }}</p>
-    <a href="{{ route('albums.index') }}">Voltar para a lista de álbuns</a>
+    <div class="container mt-5">
+        <h1>{{ $album->title }}</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Artista: {{ $album->artist }}</h5>
+                <p class="card-text"><strong>Ano de Lançamento:</strong> {{ $album->release_year }}</p>
+                <p class="card-text"><strong>Gênero:</strong> {{ $album->genre }}</p>
+                <p class="card-text"><strong>Preço:</strong> R$ {{ number_format($album->price, 2, ',', '.') }}</p>
+                <a href="{{ route('albums.index') }}" class="btn btn-secondary">Voltar para a lista de álbuns</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
