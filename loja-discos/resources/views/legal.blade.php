@@ -118,7 +118,7 @@
         <div class="portfolio-item">
             <h3>Otto Sanches</h3>
             <p>lider do grupo</p>
-            <a href="" target="_blank">
+            <a href="https://github.com/Faded235" target="_blank">
             <img src="{{ asset('images/otto.jpg') }}" alt="">
             </a>
         </div>
@@ -132,7 +132,7 @@
         <div class="portfolio-item">
             <h3>Ryan Gomes</h3>
             <p>fez o</p>
-            <a href="" target="_blank">
+            <a href="https://github.com/ryanqg" target="_blank">
             <img src="{{ asset('images/ryan.jpg') }}" alt="">
             </a>
 
