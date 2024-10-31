@@ -24,6 +24,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
         .menu {
+            z-index: 100;
             display: none;
             background: rgba(249, 249, 249, 0.9); /* Fundo do menu semi-transparente */
             border: 1px solid rgba(221, 221, 221, 0.8);
@@ -36,16 +37,19 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         .menu a {
+            z-index: 100;
             display: block;
             padding: 8px 15px;
             text-decoration: none;
             color: #333; /* Cor do texto do menu */
         }
         .menu a:hover {
+            z-index: 100;
             background: rgba(0, 123, 255, 0.7);
             color: #fff;
         }
         .toggle-menu {
+            z-index: 100;
             cursor: pointer;
             padding: 10px;
             background: rgba(0, 123, 255, 0.7);
@@ -55,6 +59,7 @@
             transition: background 0.3s;
         }
         .toggle-menu:hover {
+            z-index: 100;
             background: rgba(0, 123, 255, 1);
         }
         .container {
@@ -97,23 +102,23 @@
             color: #0056b3; /* Cor do link ao passar o mouse */
         }
         .portfolio-item img{
-            width: 300px;
+            width: 250px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Bem-vindo ao Meu Portfólio</h1>
-    <button class="toggle-menu" onclick="toggleMenu()">Menu</button>
+    <h1>Loja de Discos</h1>
+    <button class="toggle-menu" onclick="toggleMenu()">Discos</button>
     <nav class="menu" id="menu">
-        <a href="pagina1.html">Página 1</a>
-        <a href="pagina2.html">Página 2</a>
+        <a href="pagina1.html">Lista dos Discos</a>
+        <a href="pagina2.html">Crud Discos</a>
     </nav>
 </header>
 
 <div class="container">
-    <h2>Portfólio de Pessoas</h2>
+
     <div class="portfolio">
         <div class="portfolio-item">
             <h3>Otto Sanches</h3>

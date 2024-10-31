@@ -1,7 +1,5 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DiscoController;
-
 
 Route::get('/', function () {
     return view('welcome');
@@ -15,6 +13,7 @@ Route::get('/legal', function () {
     return view('legal');
 });
 
+use App\Http\Controllers\AlbumController;
 
-// Route::resource('discos', DiscoController::class);
-
+Route::get('/albums', [AlbumController::class, 'index'])->name('albums.index');
+Route::get('/albums/{id}', [AlbumController::class, 'show'])->name('albums.show');
