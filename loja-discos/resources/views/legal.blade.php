@@ -96,6 +96,9 @@
         .portfolio-item a:hover {
             color: #0056b3; /* Cor do link ao passar o mouse */
         }
+        .portfolio-item img{
+            width: 300px;
+        }
     </style>
 </head>
 <body>
@@ -114,24 +117,23 @@
     <div class="portfolio">
         <div class="portfolio-item">
             <h3>Otto Sanches</h3>
-            <p>Líder do Grupo</p>
-            <img src="loja-discos/assets/otto.jpg" alt="">
+            <p>lider do grupo</p>
             <a href="" target="_blank">
-                <img src="/loja-discos/assets/otto.jpg" alt="">
+            <img src="{{ asset('images/otto.jpg') }}" alt="">
             </a>
         </div>
         <div class="portfolio-item">
             <h3>Rafael Antônio</h3>
             <p>fez o site</p>
-            <a href="" target="_blank">
-                <img src="loja-discos/assets/ryan.jpg" alt="">
+            <a href="https://github.com/kinko6" target="_blank">
+            <img src="{{ asset('images/eu.jpg') }}" alt="">
             </a>
         </div>
         <div class="portfolio-item">
             <h3>Ryan Gomes</h3>
-            <p></p>
+            <p>fez o</p>
             <a href="" target="_blank">
-                <img src="loja-discos/assets/eu.jpg" alt="">
+            <img src="{{ asset('images/ryan.jpg') }}" alt="">
             </a>
 
         </div>
