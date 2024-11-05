@@ -28,6 +28,8 @@
         @endif
         
         <a href="{{ route('albums.create') }}" class="btn btn-primary mt-3">Adicionar Novo Álbum</a>
+        <a href="/" class="btn btn-secondary mt-3">Voltar ao menu inicial</a>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
