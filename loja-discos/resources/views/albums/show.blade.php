@@ -16,7 +16,13 @@
                 <p class="card-text"><strong>Gênero:</strong> {{ $album->genre }}</p>
                 <p class="card-text"><strong>Preço:</strong> R$ {{ number_format($album->price, 2, ',', '.') }}</p>
                 <a href="{{ route('albums.index') }}" class="btn btn-secondary">Voltar para a lista de álbuns</a>
+                <form action="{{ route('albums.destroy', $album->id) }}" method="POST" class="mt-3" onsubmit="return confirm('Você tem certeza que deseja excluir este álbum?');">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger">Excluir Álbum</button>
+                </form>
             </div>
+
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

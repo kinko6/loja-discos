@@ -42,4 +42,18 @@ class AlbumController extends Controller
 
         return redirect()->route('albums.index')->with('success', 'Álbum adicionado com sucesso!');
     }
+
+    public function destroy($id)
+    {
+        // Usar findOrFail para garantir que o álbum seja encontrado
+        $album = Album::findOrFail($id);
+
+        // Excluir o álbum
+        $album->delete();
+
+        // Redirecionar com mensagem de sucesso
+        return redirect()->route('albums.index')->with('success', 'Álbum excluído com sucesso!');
+    }
+
+
 }
